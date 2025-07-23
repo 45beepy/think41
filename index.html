@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recurring Event Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Recurring Event Instance Generator</h1>
+
+        <div class="input-section">
+            <h2>Define Event Rule</h2>
+            <div class="form-group">
+                <label for="eventStartDate">Event Start Date:</label>
+                <input type="date" id="eventStartDate">
+            </div>
+            <div class="form-group">
+                <label for="eventTime">Event Time:</label>
+                <input type="time" id="eventTime" value="09:00">
+            </div>
+            <div class="form-group">
+                <label for="recurrenceType">Recurrence Type:</label>
+                <select id="recurrenceType">
+                    <option value="weekly">Weekly</option>
+                    <option value="daily">Daily</option>
+                </select>
+            </div>
+            <div class="form-group" id="dayOfWeekGroup">
+                <label for="dayOfWeek">Day of Week:</label>
+                <select id="dayOfWeek">
+                    <option value="0">Sunday</option>
+                    <option value="1">Monday</option>
+                    <option value="2">Tuesday</option>
+                    <option value="3">Wednesday</option>
+                    <option value="4">Thursday</option>
+                    <option value="5">Friday</option>
+                    <option value="6">Saturday</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="numOccurrences">Number of Occurrences:</label>
+                <input type="number" id="numOccurrences" min="1" value="10">
+            </div>
+        </div>
+
+        <div class="input-section">
+            <h2>View Window</h2>
+            <div class="form-group">
+                <label for="viewWindowStartDate">From Date:</label>
+                <input type="date" id="viewWindowStartDate">
+            </div>
+            <div class="form-group">
+                <label for="viewWindowEndDate">To Date:</label>
+                <input type="date" id="viewWindowEndDate">
+            </div>
+        </div>
+
+        <button id="generateBtn">Generate Instances</button>
+
+        <div class="output-section">
+            <h2>Generated Event Instances</h2>
+            <ul id="instanceList">
+                <li class="placeholder">No instances generated yet.</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
