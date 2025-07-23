@@ -31,7 +31,7 @@ To run this project locally, follow these simple steps:
     If you're using Git, you can clone the repository:
     ```bash
     git clone https://github.com/45beepy/think41.git
-    cd recurring-event-generator
+    cd think41
     ```
     Alternatively, you can just download the `index.html`, `style.css`, and `script.js` files into a single folder on your computer.
 
